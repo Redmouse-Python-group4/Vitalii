@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 
-class HW1_2():
-	
+from abstr import Param
+
+class HW1_2(Param):
+	param=0
 	def __init__(self, age):
 		print u"Общество в начале XXI века"
 		self.age = age

@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
-class HW1_1():
+
+from abstr import Param
+
+class HW1_1(Param):
 	
+	param=0
 	def __init__(self, x):
 		self.x = x
 		if 0<=self.x<=3:	
