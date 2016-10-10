@@ -1,17 +1,13 @@
 # -*- coding: utf-8 -*-
- 
+
+from hw import hw1_1
+
 x=int(raw_input("Введите x "))
-if 0<=x<=3:
-	str=raw_input("Введите строку ")
-	n=int(raw_input("Введите число повтров "))
-	for i in range(0, n):
-		print str + '\n'
+if 0<=x<=3:	
+	print hw1_1.func1_3(x)
 elif 4<=x<=6:
-	m=int(raw_input("Введите степень "))
-	print "%s в степени %s равно %s"%(x, m, x**m)
+	print hw1_1.func4_6(x)
 elif 7<=x<=9:
-	for i in range(0, 10):
-		x+=1
-		print "%s \n" % x
+	print hw1_1.func7_9(x)
 else:
     print u"Ошибка ввода!\n"

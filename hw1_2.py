@@ -1,17 +1,18 @@
 # -*- coding: utf-8 -*-
+
+from hw import hw1_2
  
 print u"Общество в начале XXI века"
 age=int(raw_input("Введите ваш возраст "))
 if 0<=age<=7:
-    print u"Вам в детский сад"
+    print hw1_2.func1_7(age)
 elif age<=18:
-    print u"Вам в школу"
+    print hw1_2.func7_18(age)
 elif age<=25:
-    print u"Вам в профессиональное учебное заведение"
+    print hw1_2.func18_25(age)
 elif age<=60:
-    print u"Вам на работу"
+    print hw1_2.func25_60(age)
 elif age<=120:
-    print u"Вам предоставляется выбор"
+    print hw1_2.func60_120(age)
 else:
-    error = u"Ошибка! Это программа для людей!\n"
-    print error*5
+    print hw1_2.error()
